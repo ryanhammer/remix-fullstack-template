@@ -9,6 +9,7 @@
     "start": "remix-serve ./build/server/index.js",
     "dev:db:apply-new-migrations": "prisma migrate dev",
     "dev:db:reset": "prisma migrate reset --skip-seed",
+    "test": "vitest",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "format": "npx @biomejs/biome format --write ./src",
     "typecheck": "tsc"
@@ -43,7 +44,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.1.6",
     "vite": "^5.1.5",
-    "vite-tsconfig-paths": "^4.3.1"
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "^1.4.0"
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
